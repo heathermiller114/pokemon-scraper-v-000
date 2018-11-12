@@ -19,6 +19,6 @@ class Pokemon
   def self.find(id, db)
     pikachu_from_table = db.execute("SELECT * FROM pokemon WHERE id = #{id}")
     binding.pry
-    Pokemon.new
+    Pokemon.new(pikachu_from_table[0][0], pikachu_from_table[0][1], pikachu_from_table[0][2])
   end
 end
