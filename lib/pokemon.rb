@@ -12,5 +12,6 @@ class Pokemon
   end
   
   def self.save(name, type, db)
+    db.execute
   end
 end
