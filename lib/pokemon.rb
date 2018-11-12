@@ -7,7 +7,7 @@ class Pokemon
     @id = id
     @name = name
     @type = type
-    @@all_pokemon
+    @@all_pokemon << self
   end
   
   def self.save
